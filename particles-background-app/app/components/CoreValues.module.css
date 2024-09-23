@@ -1,0 +1,78 @@
+.container {
+    position: relative;
+    width: 100%;
+    height: auto;
+}
+
+.lines {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.label {
+    font-size: 14px;
+    font-weight: bold;
+    fill: black;
+    cursor: pointer;
+}
+
+.description {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #005ae1;
+    color: #ffffff;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+/* Mobile Styles */
+.mobileContainer {
+    display: none;  /* Mặc định ẩn trên desktop */
+}
+
+.mobileRow {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.starContainer {
+    margin-right: 10px;
+}
+
+.titleContainer {
+    flex-grow: 1;
+}
+
+.title, .activeTitle {
+    font-size: 18px;
+    margin: 0;
+    cursor: pointer;
+    color: #005ae1;
+}
+
+.activeTitle {
+    color: #47e281;
+}
+
+.description {
+    margin-top: 10px;
+    background-color: #005ae1;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    width: 100%;
+    transition: all 0.3s ease;
+}
+
+/* Media Query for Mobile */
+@media only screen and (max-width: 768px) {
+    .lines {
+        display: none;  /* Ẩn phần SVG và đường kẻ trên mobile */
+    }
+
+    .mobileContainer {
+        display: block;  /* Hiển thị phần mobile */
+    }
+}
